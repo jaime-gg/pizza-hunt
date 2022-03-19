@@ -15,7 +15,13 @@ const PizzaSchema = new Schema({
     type: String,
     default: 'Large'
   },
-  toppings: []
+  toppings: [], 
+  comments: [
+    {
+      type: Schema.Types.ObjectId,
+      ref:'Comment'
+    }
+  ]
 });
 
 const Pizza = model('Pizza', PizzaSchema);
