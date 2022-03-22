@@ -11,7 +11,6 @@ const getPizzaList = () => {
     });
 };
 
-
 const printPizza = ({ _id, pizzaName, toppings, size, commentCount, createdBy, createdAt }) => {
   const pizzaCard = `
     <div class="col-12 col-lg-6 flex-row">
@@ -38,8 +37,5 @@ const printPizza = ({ _id, pizzaName, toppings, size, commentCount, createdBy, c
 
   $pizzaList.innerHTML += pizzaCard;
 };
-<<<<<<< HEAD
-=======
 
 getPizzaList();
->>>>>>> 695818c8124a52ec7ce6a8fae7f228507a9a0e60
